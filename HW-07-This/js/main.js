@@ -29,4 +29,4 @@ function getMySalary() {
   const profit = parseInt(salary - salary * this.tax);
   return { salary, taxes: this.tax, profit };
 }
-setInterval(() => console.log(getMySalary.call(latvia), 10000));
+setInterval(() => console.log(getMySalary.call(latvia)), 10000);
