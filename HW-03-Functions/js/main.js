@@ -1,8 +1,7 @@
 //BIG FIRST LETTER
 
 function bigFirstLetter(string) {
-  string = string.toLowerCase();
-  return string[0].toUpperCase() + string.substring(1);
+  return string[0].toUpperCase() + string.substring(1).toLowerCase();
 }
 // function bigFirstLetter2(string) {
 //   if (!string) return string;
@@ -14,15 +13,13 @@ function bigFirstLetter(string) {
 //PALINDROM
 
 function palindrome(string) {
-  let numToStringArray = string.split("");
-  let reversedArray = string.split("").reverse();
+  const numToStringArray = string.split("");
+  const reversedArray = string.split("").reverse();
 
   for (let i = 0; i < numToStringArray.length; i++) {
-    if (numToStringArray[i] !== reversedArray[i]) {
-      return "It's not a palindrome";
-    } else {
-      return "It's a palindrome";
-    }
+    return numToStringArray[i] !== reversedArray[i]
+      ? "It's not a palindrome"
+      : "It's a palindrome";
   }
 }
 
@@ -44,8 +41,7 @@ function getMaxDigit(number) {
 
 function getClearSalary(salary) {
   const taxes = 19.5;
-  let clearSalary = +salary - +salary * (taxes / 100);
-  return clearSalary;
+  return +salary - +salary * (taxes / 100);
 }
 
 //Degree
@@ -53,7 +49,14 @@ function getClearSalary(salary) {
 function getNumberInDegree(number, degree) {
   let result = number;
   for (i = 0; i < degree - 1; i++) {
-    result = result * number;
+    result *= number;
+  }
+  if (degree < 0) {
+    result = 1;
+    for (i = 0; i < Math.abs(degree); i++) result /= number;
+    return result;
+  } else if (degree === 0) {
+    result = 1;
   }
   return result;
 }
@@ -61,9 +64,7 @@ function getNumberInDegree(number, degree) {
 //Random Number
 
 function getRandomNumber(startNum, endNum) {
-  const randomNum =
-    Math.floor(Math.random() * (endNum - startNum + 1)) + startNum;
-  return +randomNum;
+  return Math.floor(Math.random() * (endNum - startNum + 1)) + startNum;
 }
 
 // Random password
@@ -84,6 +85,6 @@ console.log(bigFirstLetter("lOL"));
 console.log(palindrome("kayak"));
 console.log(getMaxDigit(123456789));
 console.log(getClearSalary(1000));
-console.log(getNumberInDegree(3, 3));
+console.log(getNumberInDegree(2, -2));
 console.log(getRandomNumber(1, 10));
 console.log(getRandomPassword(0));
