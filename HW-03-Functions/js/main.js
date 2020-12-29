@@ -3,13 +3,6 @@
 function bigFirstLetter(string) {
   return string[0].toUpperCase() + string.substring(1).toLowerCase();
 }
-// function bigFirstLetter2(string) {
-//   if (!string) return string;
-//   string = string.toLowerCase();
-//   return string.charAt(0).toUpperCase() + string.slice(1);
-// }
-// console.log(bigFirstLetter2("aJHG"));
-
 //PALINDROM
 
 function palindrome(string) {
