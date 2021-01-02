@@ -3,10 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Events</title>
   </head>
 
   <body>
+    <div class="keys">
+      <div data-key="81" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">Lasercan</span>
+      </div>
+      <div data-key="87" class="key">
+        <kbd>W</kbd>
+        <span class="sound">Minigun</span>
+      </div>
+      <div data-key="69" class="key">
+        <kbd>E</kbd>
+        <span class="sound">Sniper_Rifle</span>
+      </div>
+      <div data-key="82" class="key">
+        <kbd>R</kbd>
+        <span class="sound">Shotgun</span>
+      </div>
+      <div data-key="84" class="key">
+        <kbd>T</kbd>
+        <span class="sound">MP5</span>
+      </div>
+      <div data-key="89" class="key">
+        <kbd>Y</kbd>
+        <span class="sound">Gun</span>
+      </div>
+      <div data-key="85" class="key">
+        <kbd>U</kbd>
+        <span class="sound">Reload</span>
+      </div>
+    </div>
+
+    <audio data-key="81" src="sfx/Laser_Cannon.mp3"></audio>
+    <audio data-key="87" src="sfx/Minigun.mp3"></audio>
+    <audio data-key="69" src="sfx/Sniper_Rifle.mp3"></audio>
+    <audio data-key="82" src="sfx/shotgun.mp3"></audio>
+    <audio data-key="84" src="sfx/MP5.mp3"></audio>
+    <audio data-key="89" src="sfx/gun.mp3"></audio>
+    <audio data-key="85" src="sfx/shotgun-reload.mp3"></audio>
     <script src="js/main.js"></script>
   </body>
 </html>
