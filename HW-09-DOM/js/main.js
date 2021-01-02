@@ -1,3 +1,4 @@
+const blockCount = 25;
 const getRadomColor = () => {
   const newColor =
     "rgb" +
@@ -27,8 +28,9 @@ const createBlock = () => {
   block.style.backgroundColor = getRadomColor();
   return block;
 };
+
 const generateBlocks = (element) => {
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < blockCount; i++) {
     element.append(createBlock());
   }
 };
