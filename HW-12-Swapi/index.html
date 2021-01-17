@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Swapi</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Jedi Academy</h1>
+      <p>Welcome on page of historical classes Jedi Academy, Young Padawan</p>
+    </header>
+    <main>
+      <div class="info">
+        <h2>Characters Info</h2>
+        <p>
+          Before you see all our documental films, we prepared something special
+          for you!
+        </p>
+        <p>
+          On this page we have key information of the main historical figures in
+          the period between Fall the Old Republic and Rise of the New Republic!
+        </p>
+        <div class="choose-episode">
+          <h3 class="title">Select episode</h3>
+          <form class="select">
+            <select name="select episode" id="select-episode">
+              <option value="1">Episode 1</option>
+              <option value="2">Episode 2</option>
+              <option value="3">Episode 3</option>
+              <option value="4">Episode 4</option>
+              <option selected value="5">Episode 5</option>
+              <option value="6">Episode 6</option>
+            </select>
+            <button id="show-info" type="button">Click here</button>
+          </form>
+          <div class="characters-container"></div>
+        </div>
+      </div>
+      <div class="planets">
+        <h2>Planets Info</h2>
+        <p>If you want to imagine all scale Star Wars, see these!</p>
+        <button id="getPlanets">More info</button>
+      </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
