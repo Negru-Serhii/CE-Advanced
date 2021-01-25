@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: rgba(8, 11, 20, 0.89);
+  color: rgb(212, 206, 206);
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  margin: 50px auto 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.photo {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.nickname,
+.date {
+  color: white;
+  opacity: 50%;
+  margin-right: 10px;
+}
